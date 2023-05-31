@@ -30,3 +30,11 @@ const arrayInfo = [
         'image': 'barbara-ramos-graphic-designer.jpg'
     }
 ]
+
+
+for(let i=0; i<arrayInfo.length; i++){
+
+    let info = arrayInfo[i];
+
+    console.log(info)
+}
