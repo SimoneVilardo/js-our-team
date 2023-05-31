@@ -42,10 +42,10 @@ for(let i=0; i<arrayInfo.length; i++){
 
     console.log(info);
     // creo l'elemento del dom che conterrà le info
-    let card = `<div class="card">
+    let card = `<div class="card border-3 col-4 bg-black bg-gradient text-info text-center">
+    <img class=" p-1" src="./img/${info.image}">
     <p>${info.nome}</p>
     <p>${info.role}</p>
-    <p>${info.image}</p>
     </div>`
     // concateno la nuova card contenente le info attualmente ciclata con quelle precedenti
     contenitore_card.innerHTML += card;
