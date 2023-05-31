@@ -31,10 +31,19 @@ const arrayInfo = [
     }
 ]
 
+const contenitore_card = document.getElementById('contenitore-card');
 
 for(let i=0; i<arrayInfo.length; i++){
 
     let info = arrayInfo[i];
 
-    console.log(info)
+    console.log(info);
+
+    let card = `<div class="card">
+    <p>${info.nome}</p>
+    <p>${info.role}</p>
+    <p>${info.image}</p>
+    </div>`
+
+    contenitore_card.innerHTML += card;
 }
