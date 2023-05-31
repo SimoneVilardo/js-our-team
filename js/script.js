@@ -1,3 +1,4 @@
+// creo l'array delle info
 const arrayInfo = [
     {
         'nome': 'Wayne Barnett',
@@ -30,20 +31,22 @@ const arrayInfo = [
         'image': 'barbara-ramos-graphic-designer.jpg'
     }
 ]
-
+// recupero il contenitore delle cards
 const contenitore_card = document.getElementById('contenitore-card');
 
+// ciclo l'array delle info
 for(let i=0; i<arrayInfo.length; i++){
 
+    // la salvo in una variabile
     let info = arrayInfo[i];
 
     console.log(info);
-
+    // creo l'elemento del dom che conterrà le info
     let card = `<div class="card">
     <p>${info.nome}</p>
     <p>${info.role}</p>
     <p>${info.image}</p>
     </div>`
-
+    // concateno la nuova card contenente le info attualmente ciclata con quelle precedenti
     contenitore_card.innerHTML += card;
 }
