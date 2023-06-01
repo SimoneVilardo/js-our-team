@@ -40,7 +40,9 @@ for(let i=0; i<arrayInfo.length; i++){
     // la salvo in una variabile
     let info = arrayInfo[i];
 
-    console.log(info);
+    console.log(info.nome);
+    console.log(info.role);
+    console.log(info.image);
     // creo l'elemento del dom che conterrà le info
     let card = `<div class="card border-3 col-4 bg-black bg-gradient text-info text-center">
     <img class=" p-1" src="./img/${info.image}">
